@@ -41,3 +41,40 @@ cd crystal-score-prime-sequences
 pip install -r requirements.txt
 python run_experiments.py
 All results (tables, plots) will be saved in the results/ folder.
+
+Option 2: Run in Google Colab
+Open the notebook notebooks/crystal_score_demo.ipynb (you can create it from the provided code) or copy the content of run_experiments.py into a Colab cell.
+
+Required packages
+numpy
+
+pandas
+
+matplotlib
+
+sympy
+
+scipy
+
+Results (N=5000)
+Sequence	Crystal Score
+Squares (n²)	0.9984
+Triangular numbers	0.9984
+pₙ × pₙ₊₁ × pₙ₊₂	0.9715
+pₙ × pₙ₊₁	0.8848
+Twin primes	0.6155
+Primes	0.4079
+All semiprimes	0.1700
+Random walk	0.0476
+Comparison with other invariants
+Shannon entropy of gaps: fails to separate primes (3.28 bits) from semiprimes (3.08 bits).
+
+Autocorrelation (lag 1): less sensitive to higher‑order memory.
+
+The Crystal Score captures the full transition structure and offers a wide dynamic range (0.05–0.99).
+
+License
+MIT
+
+Citation
+If you use this code, please cite the associated paper (forthcoming).
